@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 
 BRANCH="master"
 
@@ -49,7 +49,7 @@ then
       read eula
       if [ $eula = y ] || [ $eula = Y ] [ $eula -z ]
       then
-        wget -qO eula.txt http://38.242.144.150/eula.txt
+        echo "eula=true" >> eula.txt
       fi
     fi
     if [ $ram -gt 0 ]
